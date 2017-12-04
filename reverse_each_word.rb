@@ -1,2 +1,7 @@
+require "pry"
 def reverse_each_word(sentence)
-end
+    sentence = sentence.split.collect do |word|
+      "#{word.reverse}"
+    end
+
+  end
